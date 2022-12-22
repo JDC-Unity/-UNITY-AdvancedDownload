@@ -23,8 +23,8 @@ Result of this code will be:
 
 - UrApplicationPath/folder/homework.amv
 
-## What if i dont want to sort files?
-If u dont want to sort files by folders given in link do this:
+## What if I dont want to sort the files?
+If u dont want to sort files by folders specified in link, do this:
 
 ```javascript
 using UnityEngine;
@@ -46,7 +46,7 @@ Result of this code will be:
 
 - UrApplicationPath/homework.amv
 
-## Variables,Functions included
+## Variables,Functions
 from "AdvRequest todo" we can get:
 - todo.Progress - float variable, contains progress of current downloading from 0 to 100;
 - todo.FileName - string variable, contains name of file downloanding now
