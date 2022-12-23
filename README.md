@@ -48,6 +48,8 @@ Result of this code will be:
 --------
 - (Created) UrApplicationPath/folder/homework.amv
 --------
+- (Printed) file downloaded: homework.amv, total download time: 23m:06s.00ms
+--------
 - (Action) Stop the download for a second
 - END
 
