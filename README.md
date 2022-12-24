@@ -48,8 +48,6 @@ Result of this code will be:
 --------
 - (Created) UrApplicationPath/folder/homework.amv
 --------
-- (Printed) file downloaded: homework.amv, total download time: 23m:06s.00ms
---------
 - (Action) Stop the download for a second
 - END
 
@@ -76,6 +74,26 @@ Result of this code will be:
 
 - UrApplicationPath/homework.amv
 
+## (NEW) Single download with specific path
+```javascript
+using UnityEngine;
+using AdvancedDownload;
+
+public class example : MonoBehaviour
+{
+    void Start()
+    {
+        AdvRequest todo = new AdvRequest("https://somethin.com/folder/folder2/file.txt",UrApplicationPath+"/folder6");
+        
+        todo.Begin(); //begin download
+    }
+}
+```
+Result of this code will be:
+
+- UrApplicationPath/folder6/file.txt
+
+
 ## Variables,Functions
 from "AdvRequest todo" we can get:
 - todo.progress - float variable, contains progress of current downloading from 0 to 100;
@@ -86,7 +104,7 @@ from "AdvRequest todo" we can get:
 - todo.Pause() - Download last file and then stop
 - todo.Resume() - Resume download
 
-## (NEW) Event
+## Event
 
 todo.OnDownload - downloadingHandler (custom) event type, calls when file was download
 
